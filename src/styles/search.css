@@ -1,16 +1,89 @@
-body{
+body {
     background-color: rgb(45, 43, 43);
 }
 
-header{
+header {
     height: 100px;
     margin-top: 2rem;
-   
+
 }
 
-.logo{
-    display: flex;    
-    width: 400px;   
+.logo {
+    display: flex;
+    width: 400px;
     margin: 0 auto;
-    
+    padding: 20px 30px;
+    flex-wrap: wrap;
+
+}
+
+#form_search {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    margin-top: 3rem;
+    gap: 2rem;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    padding: 15px 20px;
+    border: 1px solid white;
+    width: 50%;
+    border-radius: 10px;
+    margin: 0 auto;
+    margin-top: 4rem;
+    box-shadow: 0 0 .2rem #fff,
+        0 0 .2rem #fff,
+
+        0 0 0.8rem #51ed78,
+        0 0 2.8rem #13fe3ea7,
+        inset 0 0 1.3rem #00fecf;
+
+}
+
+.search__nome {
+    display: flex;    
+    gap: 1rem;
+    color: white;
+    align-items: center;
+
+}
+
+
+
+input {
+    background-color: rgba(31, 31, 31, 0.597);
+    border: none;
+    height: 30px;
+    width: 100%;
+    border-radius: 8px;
+    color: white;
+    font-size: 1rem;
+    text-transform: uppercase;
+}
+
+input.active,
+input:hover.active {
+    background: rgba(31, 31, 31, 0.597);
+    border: 1px solid #062b0f; 
+
+}
+
+
+
+.search__nome>label {
+    font-family: 'Gloria Hallelujah', cursive;
+    font-size: 20px;
+}
+button{
+    font-family: 'Gloria Hallelujah', cursive;
+    border: none;
+    background-color: transparent;
+    border: 1px solid #8afca6;
+    color: white;
+    height: 25px;
+    width: 100px;
+    border-radius: 5px;
+    cursor: pointer;
+
 }
