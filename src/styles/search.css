@@ -87,3 +87,14 @@ button{
     cursor: pointer;
 
 }
+
+.list{
+    display: flex;
+}
+
+.list> li{
+    width: 500px;
+    height: 300px;
+    border: 1px solid white;
+
+}

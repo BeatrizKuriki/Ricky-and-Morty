@@ -23,9 +23,14 @@ export async function getAllCharacters(){
         })
         .then(response => response.json())
         .then(data =>{
+            if(data.count !==0){
+                window.location.replace('src/pages/characters.html')
 
-            
+            }  else{
+                window.location.replace('src/pages/error.html')
+            }         
         })
+        return characters
     }
 
    
