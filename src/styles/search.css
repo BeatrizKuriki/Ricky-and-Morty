@@ -59,7 +59,7 @@ input {
     border-radius: 8px;
     color: white;
     font-size: 1rem;
-    text-transform: uppercase;
+    /* text-transform: uppercase; */
 }
 
 input.active,
@@ -88,13 +88,42 @@ button{
 
 }
 
-.list{
+
+
+.list {
     display: flex;
-}
-
-.list> li{
-    width: 500px;
-    height: 300px;
-    border: 1px solid white;
-
-}
+    flex-wrap: wrap;
+    gap: 2rem;
+  
+    padding: 2rem;
+  
+    width: 90%;
+    margin: 0 auto;
+  }
+  
+  .list > li {
+    border: 1px solid;
+    border-radius: var(--radius-default);
+  
+    padding: 2rem;
+    width: 300px;
+    height: 500px;
+  }
+  
+  .list > li:hover {
+    box-shadow: 0 0 .2rem #fff,
+    0 0 .2rem #fff,
+    0 0 0.8rem #51ed78,
+        0 0 2.8rem #95f2a6a7,
+        inset 0 0 1.3rem #00fecf;
+  }
+  
+  .list > li > figure {
+    width: 100%;
+    height: 100%;
+  
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+  }

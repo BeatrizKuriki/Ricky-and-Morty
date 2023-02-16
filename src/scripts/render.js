@@ -1,5 +1,5 @@
-import { removeAllListeners } from "process";
-import { getAllCharacters } from "./request.js";
+
+import {  getAllCharacters } from "./request.js";
 
 export async function render(first, array = []) {
   const list = document.querySelector('.list')
@@ -7,10 +7,9 @@ export async function render(first, array = []) {
   list.innerHTML = ''
 
   if(first) {
-    const allCharacters = await getAllCharacters()
-    
+    const allCharacters = await getAllCharacters()   
 
-    allCharacters.data.forEach(element => {
+    allCharacters.results.forEach(element => {
       const card = createCard(element)
   
       list.appendChild(card)
@@ -41,4 +40,5 @@ function createCard(element) {
   cardContainer.appendChild(cardFigure)
 
   return cardContainer
+
 }

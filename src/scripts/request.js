@@ -8,6 +8,7 @@ export async function getAllCharacters(){
     .then((response) =>{
         if(response.ok){
             return response.json()
+            
         }else{
             console.log('Erro na requisição, por favor verfique as informações tente novamente')
         }
@@ -19,11 +20,15 @@ export async function getAllCharacters(){
     export async function getCharactersByName(characterName){
         const characters = await fetch(`https://rickandmortyapi.com/api/character/?name=${characterName}`, {
             method: 'GET',
-            'Content-Type' : 'application/json'
+            headers:{
+                "Content-Type" : 'application/json'
+            }
+           
         })
         .then(response => response.json())
-        .then(data =>{
-            if(data.count !==0){
+        .then(results =>{
+            localStorage.setItem('personagens'. JSON.stringfy(results))
+            if(results.count !==0){
                 window.location.replace('src/pages/characters.html')
 
             }  else{

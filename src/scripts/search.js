@@ -5,7 +5,8 @@ export function searchCharacter() {
   const button = document.querySelector('.busca__nome')
   
 
-  button.addEventListener('click', async () => {
+  button.addEventListener('click', async (event) => {
+    event.preventDefault()
     const characters = await getCharactersByName(input.value)
   })
 
