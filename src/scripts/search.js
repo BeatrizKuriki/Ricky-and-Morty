@@ -8,6 +8,7 @@ export function searchCharacter() {
   button.addEventListener('click', async (event) => {
     event.preventDefault()
     const characters = await getCharactersByName(input.value)
+    
   })
 
 }

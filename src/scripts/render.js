@@ -29,16 +29,26 @@ function createCard(element) {
   const cardFigure = document.createElement('figure')
   const cardImage = document.createElement('img')
   const cardName = document.createElement('figcaption')
+  const cardStatus = document.createElement('p')
+  const cardGender = document.createElement('p')
+  const cardSpecie = document.createElement('p')
 
   cardImage.src = element.image
   cardImage.alt = element.name
 
   cardName.innerText = element.name
+  cardStatus.innerText = `Status: ${element.status}`
+  cardGender.innerText = `Gender: ${element.gender}`
+  cardSpecie.innerText = `Specie: ${element.species}`
 
-  cardFigure.append(cardImage, cardName)
+  cardFigure.append(cardImage, cardName, cardStatus, cardGender, cardSpecie)
 
   cardContainer.appendChild(cardFigure)
 
   return cardContainer
 
 }
+
+// function showModal(){
+  
+// }

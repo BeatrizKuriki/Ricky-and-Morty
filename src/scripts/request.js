@@ -26,13 +26,13 @@ export async function getAllCharacters(){
            
         })
         .then(response => response.json())
-        .then(results =>{
-            localStorage.setItem('personagens'. JSON.stringfy(results))
-            if(results.count !==0){
-                window.location.replace('src/pages/characters.html')
+        .then(data =>{
+            localStorage.setItem('personagens', JSON.stringify(data))
+            if(data.count !== 0){
+                window.location.replace('/src/pages/dashboard.html')
 
             }  else{
-                window.location.replace('src/pages/error.html')
+                window.location.replace('/src/pages/error.html')
             }         
         })
         return characters
