@@ -29,7 +29,7 @@ body {
     padding: 100px;
     width: 50%;
    margin-top: 5%;
-   margin-left: -15%;
+   margin-left: -18%;
     color: rgb(247, 68, 3);
     font-weight: bolder;
   
@@ -67,8 +67,7 @@ body {
     color: rgb(247, 3, 3);
 }
 
-.container__right{
-   
+.container__right{   
    
     display: flex;
     justify-content: center;

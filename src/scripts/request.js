@@ -30,7 +30,6 @@ export async function getAllCharacters(){
             localStorage.setItem('personagens', JSON.stringify(data))
             if(data.count !== 0){
                 window.location.replace('/src/pages/dashboard.html')
-
             }  else{
                 window.location.replace('/src/pages/error.html')
             }         
