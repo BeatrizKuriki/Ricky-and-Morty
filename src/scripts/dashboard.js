@@ -2,16 +2,17 @@ import { render } from "./render.js"
 
 
 function showDashboard() {
-  const characters = JSON.parse(localStorage.getItem('personagens'))
+  const personagens = JSON.parse(localStorage.getItem('personagens'))
 
-  render(false, characters.data)
+  render(false, personagens)
+  
 }
 
 function handleNewSearch() {
   const button = document.querySelector('.voltar')
 
-  button.addEventListener('click', () => {
-    window.location.replace('/')
+  button.addEventListener('click', () => {    
+    window.location.replace('../pages/search.html')
   })
 }
 showDashboard()

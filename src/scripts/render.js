@@ -15,7 +15,7 @@ export async function render(first, array = []) {
       list.appendChild(card)
     });
   } else {
-    array.forEach(element => {
+    array.results.forEach(element => {
       const card = createCard(element)
   
       list.appendChild(card)
@@ -49,6 +49,3 @@ function createCard(element) {
 
 }
 
-// function showModal(){
-  
-// }
