@@ -31,7 +31,7 @@ Api Ricky and Morty</h1>
 
 <br>
 <h2 align="center"> :file_folder: Acesso ao projeto </h2>
-<p> Você pode acessar o projeto final clicando aqui:</p>
+<p> Você pode acessar o projeto final clicando aqui:https://chimerical-kitten-816303.netlify.app/src/pages/search.html</p>
 <br>
 <h2 align="center"> :computer: Tecnologias utilizadas </h2>
 
